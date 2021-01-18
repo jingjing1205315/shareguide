@@ -1,0 +1,14 @@
+{
+  "name": "shareguidemask",
+  "version": "1.0.0",
+  "description": "a npm packege includes share guide mask",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "shareGuideMask"
+  ],
+  "author": "jing",
+  "license": "ISC"
+}
