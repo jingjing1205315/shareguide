@@ -10,7 +10,7 @@ export default {
     data: function () {
         return {};
     },
-    props: {},
+    props: ['text'],
     methods: {},
     components: {},
 };
