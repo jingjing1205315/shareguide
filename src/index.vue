@@ -1,6 +1,6 @@
 <template>
     <div class='index'>
-        <div @click="$emit('closeShareGuide')">{{text}}</div>
+        <div @click="clickbtn">111111ls{{text}}</div>
     </div>
 </template>
 
@@ -11,7 +11,12 @@ export default {
         return {};
     },
     props: ['text'],
-    methods: {},
+    methods: {
+        clickbtn(){
+            console.log('clickbtn', this);
+            this.$emit('closeShareGuide')
+        }
+    },
     components: {},
 };
 </script>
