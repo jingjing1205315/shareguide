@@ -1,10 +1,13 @@
 <template>
     <div class='index'>
-        <div @click="clickbtn">111111ls{{text}}</div>
+        <div @click="clickbtn">333333{{text}}</div>
+        <!-- <div>112221111ls{{text}}</div> -->
     </div>
 </template>
 
 <script>
+import axios from 'axios';
+console.log('axios', axios)
 export default {
     name: "shareGuide",
     data: function () {
@@ -13,11 +16,16 @@ export default {
     props: ['text'],
     methods: {
         clickbtn(){
-            console.log('clickbtn', this);
+            console.log('clickbtn', this.$emit);
             this.$emit('closeShareGuide')
         }
     },
     components: {},
+    created(){
+        axios.get('https://m2.qschou.com/gateway/v3.0.0/project/index/auth3/d7138678-c40b-401c-b635-abdfa484d527?share_no=&debug_track_id=17762280ca5a6d-02c6cc32bda82-2164346a-51ab0-17762280ca6d26&r=0.48752362251926895').then(res => {
+            console.log(res)
+        })
+    }
 };
 </script>
 
@@ -36,6 +44,7 @@ export default {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        color:#fff;
     }
 
 }

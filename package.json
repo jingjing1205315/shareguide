@@ -13,5 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "vue": "^2.6.12"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
   }
 }
